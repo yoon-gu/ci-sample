@@ -25,3 +25,6 @@ class TemplateKoreanTestCase(TestCase):
 			'{% load proofread %}'
 			'{{ string|proofread }}').render(Context({'string':u'황윤구(은)는 지금 졸리다.'}))
 		self.assertEqual(rendered, u'황윤구는 지금 졸리다.')
+
+	def test_test_should_false(self):
+		self.assertEqual(1, 2)
