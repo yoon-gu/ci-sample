@@ -1,5 +1,6 @@
 # Let's get the badge!! #
 [![Build Status](https://travis-ci.org/yoon-gu/ci-sample.svg?branch=master)](https://travis-ci.org/yoon-gu/ci-sample)
+[![Coverage Status](https://codecov.io/github/yoon-gu/ci-sample/coverage.svg?branch=master)](https://codecov.io/gh/yoon-gu/ci-sample/)
 [![Coverage Status](https://coveralls.io/repos/github/yoon-gu/ci-sample/badge.svg?branch=)](https://coveralls.io/github/yoon-gu/ci-sample?branch=)
 ## Lorem ipsum dolor. ##
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
