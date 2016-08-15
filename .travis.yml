@@ -4,9 +4,10 @@ python:
   
 # command to install dependencies
 install: 
-  - pip install -q -U pip setuptools tox coverage
+  - pip install -q -U pip setuptools tox coverage coveralls
 # command to run tests
 script: tox
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - coveralls
