@@ -6,8 +6,8 @@
 * https://testrun.org/tox/latest/
 
 ### Example ###
-1. `pip install tox` or `sudo pip install tox`
-1. add `tox.ini` in your root folder.
+* `pip install tox` or `sudo pip install tox`
+* add `tox.ini` in your root folder.
 ```ini
 [tox]
 envlist = py27-{dj17,dj18,dj19}
@@ -19,8 +19,24 @@ deps=
 
 commands=coverage run manage.py test
 ```
+* run `tox`
 
-1. run `tox`
+## `travis-ci.org` ##
+* Go to `http://travis-ci.org`
+* Make sure that they have your repository access
+* Add `.travis.yml` in your root folder
+```yml
+language: python
+python:
+  - "2.7"
+  
+# command to install dependencies
+install: 
+  - pip install -q -U pip setuptools tox
+# command to run tests
+script: tox
+
+```
 
 ## `coveralls.io` ##
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, dolor, doloremque. Sit aperiam fugiat, id!
